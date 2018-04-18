@@ -708,7 +708,7 @@ if it's not present, don't show loader */
 .cssload-loading-center {
 	display: inline-block;
 	position: absolute;
-	background:#7f0900;;
+	background: url("../img/del-york_icon.png");
 	height: 29px;
 	width: 29px;
 	left: 35px;
