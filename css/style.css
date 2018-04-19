@@ -479,6 +479,30 @@ h3{
 	font-size: 13px;
 	display: block;
 }
+
+
+.client-logo{
+	border: 1px 1px 1px #eeeeee !important;
+	padding: 1px;
+	flex-basis: 16.66666666666667%;
+    height: 180px;
+    width: 16.66666666666667%;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    margin-right: -1px;
+    margin-top: -1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 5px;
+}
+
 h4{
 	font-size: 25px;
 	font-weight: 700;
@@ -533,7 +557,7 @@ aside{
 	padding: 110px 0 140px;
 }
 #features{
-	background: url(../img/banner2.jpg) no-repeat top center;
+	background: #000000 no-repeat top center;
 	background-size: cover;
 	padding: 100px 0;
 }
