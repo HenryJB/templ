@@ -17,7 +17,20 @@
   height:370px;
   background-color: #000;
   left: 135px;
-  top: -490px;
+  top: -300px;
+
+}
+
+
+#skew-filler-box{
+	position: relative;
+  width: 132px;
+  height: 90px;
+  background-color: #000;
+  left: 200px;
+  top: -343px;
+  border-radius: 5px;
+  overflow : hidden;
 
 }
 
@@ -28,7 +41,7 @@
   height: 140px;
   background-color: #fff;
   left: 144px;
-  top: -219px;
+  top: -400px;
   color: #ffffff;
   overflow : hidden;
 }
@@ -38,7 +51,7 @@
 }
 
 
-#scroll-box > img {
+ #skew-filler-box > img, #scroll-box > img {
     position : absolute;
     top      : 0;
     left     : 0;
