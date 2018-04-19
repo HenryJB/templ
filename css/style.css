@@ -1,4 +1,4 @@
-/*................................reset...........................................*/
+client/*................................reset...........................................*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -56,6 +56,11 @@ body{
 	/*font-family: 'Open Sans', sans-serif;*/
 }
 
+@font-face {
+    font-family: 'Ansley Display Regular';
+    src: url('fonts/Ansley Display-Black.WOFF');
+}
+
 header{
 	padding:20px 0 15px;
 	position: absolute;
@@ -82,6 +87,8 @@ header .logo img{
 	width: 60px;
 	height: auto;
 }
+
+
 
 .blackColor{
 	font-family: Proxima Nova;
@@ -326,8 +333,8 @@ section{
 
 #home-container{
 	background:#000 url(../img/City-Land-Scape.png) no-repeat bottom center;
-	background-size: cover;
-	padding: 20px 0 350px;
+	background-size: contain;
+	padding: 20px 0 250px;
 	animation-name: switch_ui;
 	animation-duration: 6s;
   iteration-count: infinite;
@@ -339,18 +346,19 @@ section{
 #banner{
 	padding-top: 180px;
 	background:#000;
+	padding-bottom:0 !important;
 }
 
  @keyframes switch_ui {
 		 0% {
-				 background-image: url("../img/City-Land-Scape.png");
+				 background-image: url("../img/homepagecityred.png");
 		 }
 		 33%,
 		 100% {
-				 background-image: url("../img/City-LandScape-2.png");
+				 background-image: url("../img/homepagecitywhite.png");
 		 }
 		 100% {
-				 background-image: url('../img/City-Land-Scape.png');
+				 background-image: url('../img/homepagecityred.png');
 		 }
  }
 
@@ -377,8 +385,32 @@ h1{
 }
 
 .welcome{
-	height: 155px !important;
-	width: 37% !important;
+	height: auto !important;
+	color: #ffffff;
+	font-size: 40px;
+	text-transform: uppercase;
+	display: block;
+	padding-bottom: 60px;
+
+}
+
+.company-name{
+	font-size:7vw;
+	color:  #ffffff;;
+	text-transform: uppercase;
+	font-family: 'CustomFont';
+	letter-spacing: 20px;
+	display:inline-block;
+
+}
+
+.motto{
+	color: #ffffff;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-family: century gothic;
+	margin-top: 18px;
 }
 #banner a i{
 	border: 1px solid #f5f5f5;
@@ -422,27 +454,27 @@ h3{
 	font-weight: 400;
 	line-height: 22px;
 }
-.leftblog,.rightblog,.leftblog2{
+.leftclient,.rightclient,.leftclient{
 	width: 50%;
 	float: left;
 	height: 500px;
 }
-.rightblog img{
+.rightclient img{
 	width: 100%;
 	display: block;
 	height: 500px;
 }
-.leftblog{
+.leftclient{
 	text-align: left;
 	background-color: #222222;
 	color: #f5f5f5;
 }
-.leftblog2{
+.leftclient{
 	text-align: left;
 	background-color: #f3f3f3;
 	color: #222222;
 }
-#blog span{
+#client span{
 	font-weight: 400;
 	font-size: 13px;
 	display: block;
@@ -452,7 +484,7 @@ h4{
 	font-weight: 700;
 	padding: 20px 0 30px;
 }
-#blog p.innersmall{
+#client p.innersmall{
 	padding-bottom: 35px;
 	font-weight: 500;
 }
