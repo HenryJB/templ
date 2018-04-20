@@ -30,22 +30,7 @@
   onScrollInit( $('.os-animation') );
   onScrollInit( $('.staggered-animation'), $('.staggered-animation-container'));
 
-  // scroll image
-    $(function () {
-      var $image = $('#skew-filler-box').children('img');
-      function animate_img() {
-          if ($image.css('top') == '0px') {
-              $image.animate({top: -($image.height()-468)+"px"}, $image.height()*5, function () {
-                  animate_img();
-              });
-          } else {
-              $image.animate({top: '0px'}, $image.height()*5, function () {
-                  animate_img();
-              });
-          }
-      }
-      animate_img();
-  });
+
 
 });
 
