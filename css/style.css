@@ -106,7 +106,7 @@ header .logo img{
 .redColor{
 	text-transform: uppercase;
 	font-family: Proxima Nova;
-	color: #a40000;
+	color: #ffffff;
 	font-size: 40px !important;
 	background-color: transparent !important;
 	line-height: 5px !important;
@@ -431,7 +431,7 @@ h1{
 	font-weight: 800;
 }
 #agency{
-	background-color: #ffffff;
+	background-color: #A40000;
 	/* background: rgba(241,245,246,1);
 	background: -moz-linear-gradient(top, rgba(241,245,246,1) 0%, rgba(235,235,235,1) 69%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(241,245,246,1)), color-stop(69%, rgba(235,235,235,1)), color-stop(94%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
@@ -610,6 +610,7 @@ aside{
 }
 #features  article p.innersmall, #agency article p.innersmall{
 	padding-bottom: 45px;
+	color: #ffffff;
 }
 .design{ width: 80% }
 .code{ width: 90%; }
