@@ -238,3 +238,29 @@ iPad 3
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
 }
+
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+}
+
+h4.panel-title {
+  color: white;
+  border: none;
+}
+
+div#headingOne,
+div#headingTwo,
+div#headingThree,
+div#headingFour {
+  background-color: transparent;
+  border: none;
+}
+
+.panel-default >.panel-heading+.panel-collapse >.panel-body {
+  border:none;
+}
+
+.panel-collapse>.panel-body
