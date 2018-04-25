@@ -42,4 +42,7 @@
   else{
     $('header').removeClass("sticky");
   }
+
+
+  
 });

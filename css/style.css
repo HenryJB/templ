@@ -343,7 +343,7 @@ section{
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   width: 100%;
-  height: 100vh;
+  
 }
 #banner{
 	padding-top: 180px;
