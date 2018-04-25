@@ -30,6 +30,27 @@
   onScrollInit( $('.os-animation') );
   onScrollInit( $('.staggered-animation'), $('.staggered-animation-container'));
 
+var md = new MobileDetect(window.navigator.userAgent);
+
+if (md.mobile() || md.tablet() || md.phone()) {
+  var head = document.getElementsByTagName("head")[0];
+  var link1 = document.createElement("link");
+  var link2 = document.createElement("link");
+  link1.rel = "stylesheet";
+  link1.type = "text/css";
+  link1.href = "css/media_queries/skewbox.css";
+  link1.media = "all";
+  head.appendChild(link1);
+
+  link2.rel = "stylesheet";
+  link2.type = "text/css";
+  link2.href = "css/media_queries/scrollbox.css";
+  link2.media = "all";
+  head.appendChild(link2);
+
+  //remove the laptop query
+  $('#laptop').remove();
+}
 
 
 });
@@ -43,6 +64,5 @@
     $('header').removeClass("sticky");
   }
 
-
-  
 });
+
