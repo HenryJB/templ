@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+@media only screen and (max-width: 1023px) and (min-width: 992px) {
+    #skew-filler-box {
+        display: none;
+    }
+
+    #scroll-box {
+        display: none;
+    }
+}
+=======
 /* This styles here apply to different mobile representations */
 
 @media (min-device-width: 320px) and (max-device-width: 359px) {
@@ -251,3 +262,4 @@
 
 
 
+>>>>>>> master

@@ -11,7 +11,17 @@
     overflow: hidden;
 }
 
-@media (min-device-width: 320px) and (max-device-width: 359px) {
+@media (device-width: 200px) {
+    #skew-filler-box {
+        display: none;
+    }
+
+    #scroll-box {
+        display: none;
+    }
+}
+
+@media (min-device-width: 320px) and (max-device-width: 359px) and (orientation: portrait) {
     #skew-filler-box {
         position: relative;
         width: 105px !important;
@@ -23,7 +33,7 @@
         overflow: hidden;
     }
 
-    #home-container{
+    #home-container {
         height: 40px;
     }
 }
@@ -53,9 +63,9 @@
         overflow: hidden;
     }
 
-    #home-container{
+    #home-container {
         height: 28vh;
-        padding:0;
+        padding: 0;
     }
 }
 
@@ -90,6 +100,7 @@
     }
 }
 
+
 @media only screen and (min-device-width: 768px) {
     #skew-filler-box {
         position: relative;
@@ -119,7 +130,7 @@
         overflow: hidden;
     }
 
-    #home-container{
+    #home-container {
         height: 40vh;
     }
 }
@@ -150,7 +161,7 @@
     }
 }
 
-@media only screen and (min-device-width: 667px) and (orientation: landscape) {
+@media only screen and (min-device-width: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
     #skew-filler-box {
         position: relative;
         width: 224px !important;
@@ -215,31 +226,46 @@
     }
 }
 
-@media only screen  and (min-device-width : 1200px) and (max-device-width: 1400px) {
+@media only screen and (min-device-width: 1200px) {
+    #skew-filler-box {
+        position: relative;
+        width: 197px !important;
+        height: 119px !important;
+        background-color: #000;
+        left: 139px !important;
+        top: -537px !important;
+        border-radius: 2px !important;
+        overflow: hidden;
+    }
+
+    #home-container {
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 992px) {
     #skew-filler-box {
         display: none;
     }
-     #scroll-box {
-         display: none;
-     }
-     #home-container {
-         height: 70vh;
-     }
+
+    #scroll-box {
+        display: none;
+    }
 }
 
-@media only screen and (min-device-width:1440px) {
+@media only screen and (min-device-width:1440px) and (orientation: portrait) {
     #skew-filler-box {
-            position: relative;
-            width: 197px !important;
-            height: 119px !important;
-            background-color: #000;
-            left: 139px !important;
-            top: -537px !important;
-            border-radius: 2px !important;
-            overflow: hidden;
+        position: relative;
+        width: 197px !important;
+        height: 119px !important;
+        background-color: #000;
+        left: 139px !important;
+        top: -537px !important;
+        border-radius: 2px !important;
+        overflow: hidden;
     }
 
-    #home-container{
+    #home-container {
         height: 75vh;
     }
 }
