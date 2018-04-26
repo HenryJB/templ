@@ -1,10 +1,6 @@
-//animation effect(waypoint)
-//paste this code under head tag or in a seperate js file.
- // Wait for window load
- $(window).load(function() {
-  // Animate loader off screen
-  $(".se-pre-con").fadeOut("slow");
 
+ $(window).load(function() {
+  $(".se-pre-con").fadeOut("slow");
   function onScrollInit( items, trigger ) {
     items.each( function() {
       var osElement = $(this),
@@ -50,9 +46,7 @@ if (md.mobile() || md.tablet() || md.phone()) {
 
   //remove the laptop query
   $('#laptop').remove();
-}
-
-
+   }
 });
 
  $(window).scroll(function() {
@@ -66,3 +60,20 @@ if (md.mobile() || md.tablet() || md.phone()) {
 
 });
 
+$(window).resize(function () {
+  updateContainer();
+});
+//this checks if the browser has been resized
+function updateContainer() {
+  var md = new MobileDetect(window.navigator.userAgent);
+
+  var $containerWidth = $(window).width();
+  if ($containerWidth <= 1199 && md.phone() === null && md.tablet() === null) {
+    console.log(md.phone());
+    window.location.reload();
+    console.log("window was resized");
+  } else {
+    console.log(md.phone());
+    console.log("Could not reload browser");
+  }
+}
