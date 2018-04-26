@@ -73,12 +73,6 @@
 	-webkit-transform: rotate(360deg);
 }
 
-.panel-group .panel {
-	margin-bottom: 0;
-	border-radius: 4px;
-	background-color: transparent;
-	border: none;
-}
 
 h4.panel-title {
 	color: white;
@@ -89,15 +83,22 @@ div#headingOne,
 div#headingTwo,
 div#headingThree,
 div#headingFour {
-	background-color: transparent;
-	border: none;
+  background-color:#A40000;
+  border: none;
+
+}
+
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #a40000 !important;
+    border-color: #ddd;
 }
 
 .panel-default >.panel-heading+.panel-collapse >.panel-body {
 	border:none;
 }
 
-.panel-collapse>.panel-body
 
 	/*-- header --*/
 .jarallax {
